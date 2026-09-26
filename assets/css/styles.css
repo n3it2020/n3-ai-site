@@ -31,6 +31,7 @@ a:hover{color:var(--teal-deep);text-decoration-thickness:2px}
 .skip:focus{left:0}
 .wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
 
+h1,h2{text-wrap:balance}
 h1,h2,h3,h4{font-weight:600;line-height:1.15;letter-spacing:-.015em;margin:0 0 .6em;color:var(--ink)}
 h1{font-size:clamp(2.25rem,4.6vw,3.6rem);letter-spacing:-.025em;line-height:1.08}
 h2{font-size:clamp(1.65rem,3vw,2.35rem)}
@@ -44,7 +45,7 @@ strong{font-weight:600}
 .site-header{background:var(--paper);border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
 .brand{display:inline-flex;align-items:center;flex:none}
-.brand img{display:block;height:34px;width:auto}
+.brand img{display:block;height:40px;width:auto}
 .nav{display:flex;align-items:center;gap:28px}
 .nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
 .nav a.link{color:var(--ink);text-decoration:none;font-weight:500;font-size:.98rem;padding:6px 0;border-bottom:2px solid transparent}
@@ -143,7 +144,7 @@ strong{font-weight:600}
 
 /* tables */
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{border-collapse:collapse;width:100%;min-width:560px;background:var(--paper);border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:0;background:var(--paper);border:1px solid var(--line)}
 th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.98rem}
 th{font-weight:600;background:var(--panel)}
 caption{text-align:left;font-weight:600;padding:0 0 10px;caption-side:top}
@@ -219,6 +220,7 @@ caption{text-align:left;font-weight:600;padding:0 0 10px;caption-side:top}
 }
 @media (max-width:620px){
   body{font-size:1rem}
+  table{min-width:460px}
   .grid-3,.steps,.arch{grid-template-columns:1fr}
   .arch{row-gap:0}
   .arch li{padding:0 0 26px 34px}
@@ -226,7 +228,7 @@ caption{text-align:left;font-weight:600;padding:0 0 10px;caption-side:top}
   .arch li::after{top:2px;left:0}
   .arch li:last-child::before{display:none}
   .actions .btn{width:100%}
-  .brand img{height:30px}
+  .brand img{height:34px}
   .wrap{padding-inline:20px}
   .nav{padding-inline:20px}
 }
