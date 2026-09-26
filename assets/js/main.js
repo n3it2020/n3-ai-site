@@ -33,6 +33,11 @@
   };
   var TO = 'hello@n3cloudsolutions.com';
 
+  // Requests that arrive from a "Book a 15-Minute Demo" button (?type=demo)
+  // are tagged in the message so they can be filtered in the Google Sheet.
+  var isDemo = /[?&]type=demo(&|#|$)/.test(window.location.search + window.location.hash);
+  var TAG = isDemo ? '[DEMO REQUEST] ' : '[CONTACT] ';
+
   var form = document.getElementById('contact-form');
   if (!form) return;
   var status = document.getElementById('form-status');
@@ -63,7 +68,7 @@
       var body = 'Name: ' + data.name + '\nBusiness: ' + data.business + '\nEmail: ' + data.email +
         '\n\nWhat I would like to automate:\n' + data.message;
       window.location.href = 'mailto:' + TO + '?subject=' +
-        encodeURIComponent('15-minute conversation request') + '&body=' + encodeURIComponent(body);
+        encodeURIComponent(isDemo ? '15-minute demo request' : '15-minute conversation request') + '&body=' + encodeURIComponent(body);
       show('Your email app should open with your message ready to send. If it does not, email ' + TO + ' directly.', 'ok');
       return;
     }
@@ -72,7 +77,7 @@
     fd.append(FORM.name, data.name);
     fd.append(FORM.email, data.email);
     fd.append(FORM.business, data.business);
-    fd.append(FORM.message, data.message);
+    fd.append(FORM.message, TAG + data.message);
 
     submit.disabled = true;
     submit.textContent = 'Sending...';
