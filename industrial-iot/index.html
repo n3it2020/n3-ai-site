@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Industrial IoT & Cloud Solutions | n3 ai</title>
+<meta name="description" content="Industrial IoT and cloud engineering from N3 IT Solutions: sensor connectivity, AWS IoT data ingestion, monitoring, analytics, anomaly detection and dashboards.">
+
+<link rel="canonical" href="https://n3cloudsolutions.com/industrial-iot/">
+<meta name="theme-color" content="#0E4A5A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="n3 ai, by N3 IT Solutions">
+<meta property="og:title" content="Industrial IoT & Cloud Solutions | n3 ai">
+<meta property="og:description" content="Industrial IoT and cloud engineering from N3 IT Solutions: sensor connectivity, AWS IoT data ingestion, monitoring, analytics, anomaly detection and dashboards.">
+<meta property="og:url" content="https://n3cloudsolutions.com/industrial-iot/">
+<meta property="og:image" content="https://n3cloudsolutions.com/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/styles.css">
+
+<noscript><style>.menu-btn{display:none}.nav{display:flex!important;position:static!important;flex-direction:row!important;flex-wrap:wrap;border:0!important;padding:0!important}.site-header .wrap{flex-wrap:wrap}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="../" aria-label="n3 ai, home"><img src="../assets/img/logo-horizontal.svg" alt="n3 ai" width="150" height="34"></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main">
+<ul>
+<li><a class="link" href="../">Home</a></li>
+<li><a class="link" href="../ai-solutions/">AI Solutions</a></li>
+<li><a class="link" href="../industrial-iot/" aria-current="page">Industrial IoT</a></li>
+<li><a class="link" href="../how-it-works/">How It Works</a></li>
+<li><a class="link" href="../about/">About</a></li>
+<li><a class="link" href="../contact/">Contact</a></li>
+</ul>
+<a class="btn btn-primary btn-sm" href="../contact/#start">Book a 15-Minute Demo</a>
+</nav>
+</div>
+</header>
+<main id="main">
+
+<section class="page-hero" aria-labelledby="h1">
+<div class="wrap">
+<h1 id="h1">Industrial IoT &amp; Cloud Solutions</h1>
+<p class="lead">Connect your equipment. Capture your data. Understand what's happening.</p>
+<p>Industrial IoT links sensors, instruments and equipment to computers so data can be collected, shared and analyzed. In practice, it means you can see what your equipment is doing without someone walking the floor to check. N3 IT Solutions designs these systems and has built proof-of-concept projects on AWS.</p>
+<div class="actions"><a class="btn btn-primary" href="../contact/#start">Book a 15-Minute Demo</a></div>
+</div>
+</section>
+
+<section class="section paper" aria-labelledby="arch-h">
+<div class="wrap">
+<div class="section-head"><h2 id="arch-h">Example architecture</h2><p>From equipment to a screen someone can act on. The exact design depends on your equipment, your network and your budget.</p></div>
+<ol class="arch">
+<li><h3>Equipment &amp; sensors</h3><p>Machines, meters and sensors produce readings.</p></li>
+<li><h3>IoT connectivity</h3><p>Devices connect securely, directly or through a gateway.</p></li>
+<li><h3>Cloud data ingestion</h3><p>Readings arrive in the cloud as they are produced.</p></li>
+<li><h3>Data processing</h3><p>Data is cleaned, filtered and stored.</p></li>
+<li><h3>Analytics</h3><p>Trends and unusual patterns are identified.</p></li>
+<li><h3>Dashboard &amp; alerts</h3><p>People see what matters and are notified.</p></li>
+</ol>
+<div class="aws"><h3>One implementation on AWS</h3><p>IoT sensor to AWS IoT Core, then Kinesis Data Firehose and Kinesis Data Analytics for real-time processing, AWS Lambda for custom logic and DynamoDB for storage. A data lake feeds business intelligence and analytics, and custom dashboards show streaming data.</p></div>
+</div>
+</section>
+
+<section class="section" aria-labelledby="conn-h">
+<div class="wrap two-col">
+<div>
+<h2 id="conn-h">Sensor &amp; device connectivity</h2>
+<p>We work with the measurements that matter to your operation: temperature, humidity, energy, pressure, vibration, equipment status, runtime and other operational readings.</p>
+<p>Every device is registered, given security keys and granted only the permissions it needs, so the connection is controlled from the start.</p>
+</div>
+<div class="table-scroll">
+<table>
+<caption>Common ways equipment reaches the cloud</caption>
+<thead><tr><th scope="col">Source</th><th scope="col">Path to the cloud</th></tr></thead>
+<tbody>
+<tr><th scope="row">Mobile devices and vehicles</th><td>Telematics unit, then 3G/LTE, then the cloud</td></tr>
+<tr><th scope="row">Low-power sensors</th><td>LoRaWAN, then a gateway, then the cloud</td></tr>
+<tr><th scope="row">Industrial controllers (PLCs)</th><td>Wired OPC UA, then a gateway, then the cloud</td></tr>
+<tr><th scope="row">Building controllers</th><td>LoRaWAN controller, then the cloud</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section class="section alt" aria-labelledby="ingest-h">
+<div class="wrap two-col">
+<div>
+<h2 id="ingest-h">Cloud data ingestion</h2>
+<p>IoT data is generated by devices, grows quickly, arrives in many formats and is used by different people and applications. The ingestion design has to be affordable, efficient and fit the limits of distance, cost and regulation between the sensor and the cloud.</p>
+<p>On AWS, we build with services such as AWS IoT Core, Kinesis, Lambda and DynamoDB, using APIs and event-driven architecture, so you pay for managed services instead of running servers.</p>
+</div>
+<div>
+<h3>How we keep it efficient</h3>
+<ul class="ticks" style="grid-template-columns:1fr">
+<li>Send data only when a value changes (delta encoding) to reduce messaging cost.</li>
+<li>Do basic ingestion up front, then process in batches when real-time isn't needed.</li>
+<li>Use event-driven processing when something must happen right away, or combine batch and event-driven.</li>
+<li>Store everything in a data lake for later analysis and business intelligence.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section paper" aria-labelledby="mon-h">
+<div class="wrap two-col">
+<div>
+<h2 id="mon-h">Monitoring &amp; alerts</h2>
+<p>Once readings arrive, rules can watch them. When a value crosses a limit you set, or equipment stops reporting, the right person is notified by email or message, so a small issue doesn't wait until the next inspection.</p>
+</div>
+<div>
+<h2>Dashboards and web apps</h2>
+<p>Trends can be shown in tools such as Grafana, Kibana or Amazon QuickSight, or in a custom web application built with AWS AppSync, depending on who needs to see the data and how.</p>
+</div>
+</div>
+</section>
+
+<section class="section alt" aria-labelledby="an-h">
+<div class="wrap two-col">
+<div>
+<h2 id="an-h">Analytics &amp; anomaly detection</h2>
+<p>Historical readings show what normal looks like for a machine. Against that baseline, unusual patterns, such as a change in vibration, can be flagged for someone to look at.</p>
+<p>Models can be built with industry-standard tools such as Keras and TensorFlow. Anomaly detection and forecasting can also be done with Amazon QuickSight.</p>
+</div>
+<div>
+<h2>Predictive maintenance</h2>
+<p>Predictive maintenance means using patterns in data such as vibration, temperature and runtime to spot equipment that may need attention sooner, so maintenance can be planned rather than reactive.</p>
+<p>It depends on having enough good-quality data. If you don't yet, we'll tell you, and start by collecting it.</p>
+</div>
+</div>
+</section>
+
+<section class="section paper" aria-labelledby="aiot-h">
+<div class="wrap">
+<h2 id="aiot-h">AI + IoT</h2>
+<div class="callout"><p>IoT tells you what is happening.</p><p><strong>AI can help determine what it means.</strong></p></div>
+</div>
+</section>
+<section class="cta-band on-dark" aria-labelledby="cta-h">
+<div class="wrap">
+<h2 id="cta-h">Have equipment that should be talking to the cloud?</h2>
+<p>Tell us what you monitor today, and what you wish you could see. We will explore what is practical.</p>
+<div class="actions"><a class="btn btn-primary" href="../contact/#start">Book a 15-Minute Conversation</a></div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<img src="../assets/img/logo-full-reversed.svg" alt="n3 ai, by N3 IT Solutions" width="200" height="52">
+<p>Practical AI automation, software, cloud and IoT solutions for businesses that don't have a technology department.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<ul>
+<li><a href="../ai-solutions/">AI Solutions</a></li>
+<li><a href="../industrial-iot/">Industrial IoT</a></li>
+<li><a href="../how-it-works/">How It Works</a></li>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h2>Contact</h2>
+<ul>
+<li><a href="mailto:hello@n3cloudsolutions.com">hello@n3cloudsolutions.com</a></li>
+<li><a href="tel:+15134929365">513 492 9365</a></li>
+<li>Cincinnati, OH</li>
+</ul>
+</div>
+</div>
+<div class="legal"><p>&copy; 2026 N3 IT Solutions. n3 ai is the AI and automation practice of N3 IT Solutions. <a href="../privacy/">Privacy</a></p></div>
+</div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
