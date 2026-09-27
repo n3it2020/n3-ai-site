@@ -4,3 +4,5 @@ Static website for n3 ai (n3cloudsolutions.com). Plain HTML, CSS and a little Ja
 
 - `index.html`, `ai-solutions/`, `industrial-iot/`, `how-it-works/`, `about/`, `contact/`, `privacy/`: pages
 - `assets/`: styles, script, fonts (IBM Plex Sans, SIL Open Font License) and logo files
+
+Images: all icons and illustrations in assets/img (icon-*.svg, illus-*.svg) are original vector artwork made for this site. They contain no text and load nothing from other sites.

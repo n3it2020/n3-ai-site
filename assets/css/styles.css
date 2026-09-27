@@ -194,6 +194,16 @@ caption{text-align:left;font-weight:600;padding:0 0 10px;caption-side:top}
 .legal{margin-top:40px;padding-top:22px;border-top:1px solid #3A4046;font-size:.9rem;color:#B5BAC0}
 .legal p{max-width:none;margin:0}
 
+/* images */
+.icon{display:block;width:56px;height:56px;margin:0 0 16px}
+.flow-art{display:block;width:100%;height:auto;margin:0 0 22px;border-radius:4px}
+.art{display:block;width:100%;height:auto}
+.statement .art{margin-top:30px;max-width:360px}
+.art.fit{max-width:440px;margin:0 0 30px}
+.art.iot{margin:0 0 30px}
+.hero-split{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero-split .art{max-width:440px;margin-left:auto}
+
 /* tablet */
 @media (max-width:1040px){
   .menu-btn{display:inline-block}
@@ -207,6 +217,8 @@ caption{text-align:left;font-weight:600;padding:0 0 10px;caption-side:top}
   .steps{grid-template-columns:repeat(3,1fr)}
   .arch{grid-template-columns:repeat(3,1fr);row-gap:34px}
   .grid-3{grid-template-columns:repeat(2,1fr)}
+  .hero-split{grid-template-columns:1fr;gap:32px}
+  .hero-split .art{margin-left:0;max-width:420px}
 }
 @media (max-width:860px){
   .section{padding:64px 0}
